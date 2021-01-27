@@ -9,6 +9,8 @@ Ext.define('extjs-webinar.view.home.HomeView',{
   listeners: {
     afterrender: function() {
       console.log('afterrender')
+      console.log(Ext.react)
+      //this.r = Ext.react.React.createElement(Ext.react.BasicLayout,{},null)
       this.r = Ext.react.React.createElement(Ext.react.App,{},null)
       //this.r = Ext.react.elementApp
       Ext.react.ReactDOM.render(this.r,this.el.dom);
