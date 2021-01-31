@@ -1,6 +1,6 @@
 Ext.define('extjs-webinar.view.main.center.CenterView', {
 	extend: 'Ext.Container',
 	xtype: 'centerview',
-	cls: 'centerview',
+  cls: 'centerview',
 	layout: 'card'
 });
