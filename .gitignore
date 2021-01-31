@@ -2,3 +2,5 @@
 /generatedFiles
 /cordova
 /node_modules
+*.hot-update.js
+*.hot-update.json
