@@ -4,7 +4,7 @@ Ext.define('extjs-webinar.view.main.header.HeaderView', {
   xtype: 'headerview',
   cls: 'headerview',
   defaults: {
-    ui:'toolbutton-toolbar', 
+    ui:'toolbutton-toolbar',
     handler:'onToolButtonClicked'
   },
   items: [
@@ -21,7 +21,17 @@ Ext.define('extjs-webinar.view.main.header.HeaderView', {
     },
     '->',
     '->',
-    {name:'calendar', iconCls:'x-fa fa-calendar', tooltip:'calendar'},
+
+
+
+
+
+    {name:'calendar', iconCls:'x-fa fa-calendar', tooltip:'calendar',
+      handler: function() {
+        var d = Date.now()
+        console.log('sending: ' + d)
+        window.dispatchEvent(new CustomEvent('mjg',{detail:{message:d}}));
+      }},
     {name:'bolt',     iconCls:'x-fa fa-bolt',     tooltip:'bolt'},
     {name:'search',   iconCls:'x-fa fa-search',   tooltip:'search'},
     {

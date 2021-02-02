@@ -1,7 +1,9 @@
 Ext.define('extjs-webinar.Application', {
 	extend: 'Ext.app.Application',
 	name: 'extjs-webinar',
-	requires: ['extjs-webinar.*'],
+  requires: ['extjs-webinar.*','Ext.chart.*'],
+
+  //requires: ['Ext.chart.theme.Muted','Ext.chart.*'],
 	defaultToken: 'homeview',
 
 	launch: function () {

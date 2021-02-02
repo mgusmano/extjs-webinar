@@ -42,7 +42,6 @@ Ext.define('extjs-webinar.view.main.MainViewController', {
   },
 
   mainRoute:function(xtype) {
-    console.log('mainRoute')
     var centerview = this.lookup('centerview');
     if (!centerview.getComponent(xtype)) {
       centerview.add({ xtype: xtype,  itemId: xtype, heading: xtype });
@@ -51,7 +50,7 @@ Ext.define('extjs-webinar.view.main.MainViewController', {
     var vm = this.getViewModel();
     vm.set('heading', xtype);
     return
-    
+
     //var menuview = this.lookup('menuview');
     var navview = this.lookup('navview');
     var menuview = navview.items.items[0]

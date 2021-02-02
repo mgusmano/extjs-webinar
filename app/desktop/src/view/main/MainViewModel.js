@@ -31,6 +31,14 @@ Ext.define('MyAppName.view.main.MainViewModel', {
         url: 'resources/desktop/menu.json'
     },
     autoLoad: true
+    },
+    widgets: {
+      proxy: {
+        type: 'ajax',
+        reader: 'json',
+        url: 'resources/desktop/widgets.json'
+    },
+    autoLoad: true
     }
 	}
 

@@ -23,7 +23,7 @@ Ext.define('extjs-webinar.view.main.MainView', {
         }
     },
     { xtype: 'headerview', reference: 'headerview', region: 'north', docked: 'top',    weight: -2 },
-    { xtype: 'footerview', reference: 'footerview', region: 'south', docked: 'bottom', weight: -2 },
+    //{ xtype: 'footerview', reference: 'footerview', region: 'south', docked: 'bottom', weight: -2 },
     { xtype: 'centerview', reference: 'centerview', region: 'center', weight: -1 },
     { xtype: 'detailview', reference: 'detailview', region: 'east', docked: 'right',  width: 0, bind: {width:  '{detailview_width}'}  },
   ]

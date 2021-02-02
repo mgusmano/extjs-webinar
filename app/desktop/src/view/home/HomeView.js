@@ -10,28 +10,24 @@ Ext.define('extjs-webinar.view.home.HomeView',{
     afterrender: function() {
       console.log('afterrender')
       console.log(Ext.react)
-      //this.r = Ext.react.React.createElement(Ext.react.BasicLayout,{},null)
-      this.r = Ext.react.React.createElement(Ext.react.App,{},null)
-      //this.r = Ext.react.elementApp
-      Ext.react.ReactDOM.render(this.r,this.el.dom);
 
-      // Ext.react.ReactDOM.render(
-      //   Ext.react.React.createElement(
-      //     Ext.react.App,
-      //     {},
-      //     null
-      //   ),
-      //   this.el.dom
-      // );
-      //console.log(this.r)
+      Ext.react.ReactDOM.render(
+        Ext.react.React.createElement(
+          Ext.react.App,
+          {},
+          null
+        ),
+        this.el.dom
+      );
+
     },
     beforedestroy: function() {
       var r = Ext.react.ReactDOM.unmountComponentAtNode(this.el.dom)
       if (r == true) {
-          console.log('beforedestroy - destroyed',r,this.el.dom)
+        console.log('beforedestroy - destroyed',r,this.el.dom)
       }
       else {
-          console.log('beforedestroy - NOT destroyed',r,this.el.dom)
+        console.log('beforedestroy - NOT destroyed',r,this.el.dom)
       }
     }
 },
